@@ -156,6 +156,7 @@
     color: var(--color-light-50);
     background-color:var(--color-dark-100) ;
     animation: light-to-dark-background 0.3s ease-in-out;
+    color: white;
 
 }
 
