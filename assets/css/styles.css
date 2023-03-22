@@ -1,0 +1,154 @@
+:root{
+
+--color-light-50:#f8fafc;
+
+--color-dark-50:#797984;
+--color-dark-100:#312d37;
+--color-dark-900:#000;
+
+--color-blue-50:#797984;
+
+--color-gradient:linear-gradient(90deg);
+
+--color-purple-50: #7c3aed;
+--color-purple-100: #a855f7;
+--color-purple-200: #bf46ef;
+
+/*background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
+*/}
+
+*{
+ font-family: 'Poppins', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+
+
+#container{
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#login_form{
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+
+#form-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#form-header h1{
+    font-size: 40px;
+    position: relative;
+}
+
+#form-header h1::before{
+ position: absolute;
+ content: '';
+ width: 40%;
+ background-color: purple;
+ height: 3px;
+ bottom: 5px;
+ border-radius: 5px;
+}
+
+#mode_icon{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+#social_media{
+    display: flex;
+    justify-content: space-around;
+}
+
+#social_media img {
+    width: 35px;
+}
+
+#social_media img:hover{
+    transform: scale(1.6);
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+
+.input-box label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-purple-50);
+}
+.input-field i { 
+    font-size: 18px;
+    color: var(--color-dark-900);
+}
+
+.input-field input{
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px ;
+
+}
+
+.input-field input :focus{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-dark-50);
+}
+
+
+#forgot_password a{
+    text-decoration: none;
+    color: var(--color-dark-50);
+    font-size: 12px;
+}
+
+#forgot_password a :hover{
+    color: var(--color-purple-50);
+}
+
+#login_button{
+    border: none;
+    background-image: radial-gradient(circle at 50% -20.71%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-light-50);
+
+}
+
