@@ -151,4 +151,13 @@
     color: var(--color-light-50);
 
 }
+.dark#login_form{
+    color: var(--color-light-50);
+    background-color:var(--color-dark-100) ;
 
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i{
+    color: var(--color-light-50);
+}
